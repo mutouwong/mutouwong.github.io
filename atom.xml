@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-23T07:41:46.406Z</updated>
+  <updated>2019-05-23T13:01:22.549Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker 清理日志</title>
+    <link href="http://yoursite.com/2019/05/23/Docker%20%E6%B8%85%E7%90%86%E6%97%A5%E5%BF%97/"/>
+    <id>http://yoursite.com/2019/05/23/Docker 清理日志/</id>
+    <published>2019-05-23T12:52:22.000Z</published>
+    <updated>2019-05-23T13:01:22.549Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Docker-日志位置"><a href="#Docker-日志位置" class="headerlink" title="Docker 日志位置"></a>Docker 日志位置</h1><p>docker 日志存放位置<code>/var/lib/docker/containers</code></p><h1 id="查看Docker日志大小"><a href="#查看Docker日志大小" class="headerlink" title="查看Docker日志大小"></a>查看Docker日志大小</h1><p>查看docker各个容器日志大小<code>ls -lh $(find /var/lib/docker/containers/ -name *-json.log)</code></p><h1 id="清除日志"><a href="#清除日志" class="headerlink" title="清除日志"></a>清除日志</h1><p>清空日志 <code>cat /dev/null &gt;/var/lib/docker/containers/containerid/containerid.log-json.log</code></p><p>可以直接复制上一步的日志文件路径，比如：<br><code>cat /dev/null &gt;/var/lib/docker/containers/f2a458838cc30d15396cc7ec1b3b46662140bf3cba0b12b010baf6190f61f744/f2a458838cc30d15396cc7ec1b3b46662140bf3cba0b12b010baf6190f61f744-json.log</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Docker-日志位置&quot;&gt;&lt;a href=&quot;#Docker-日志位置&quot; class=&quot;headerlink&quot; title=&quot;Docker 日志位置&quot;&gt;&lt;/a&gt;Docker 日志位置&lt;/h1&gt;&lt;p&gt;docker 日志存放位置&lt;code&gt;/var/lib/docker
+      
+    
+    </summary>
+    
+    
+      <category term="Docker" scheme="http://yoursite.com/tags/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker </title>
