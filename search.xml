@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Docker 清理日志]]></title>
+    <url>%2F2019%2F05%2F23%2FDocker%20%E6%B8%85%E7%90%86%E6%97%A5%E5%BF%97%2F</url>
+    <content type="text"><![CDATA[Docker 日志位置docker 日志存放位置/var/lib/docker/containers 查看Docker日志大小查看docker各个容器日志大小ls -lh $(find /var/lib/docker/containers/ -name *-json.log) 清除日志清空日志 cat /dev/null &gt;/var/lib/docker/containers/containerid/containerid.log-json.log 可以直接复制上一步的日志文件路径，比如：cat /dev/null &gt;/var/lib/docker/containers/f2a458838cc30d15396cc7ec1b3b46662140bf3cba0b12b010baf6190f61f744/f2a458838cc30d15396cc7ec1b3b46662140bf3cba0b12b010baf6190f61f744-json.log]]></content>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Docker]]></title>
+    <url>%2F2019%2F05%2F23%2FDocker%2F</url>
+    <content type="text"><![CDATA[#这是第一篇文章]]></content>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F05%2F22%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
